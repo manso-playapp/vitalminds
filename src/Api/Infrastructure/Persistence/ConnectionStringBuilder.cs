@@ -4,6 +4,12 @@ public static class ConnectionStringBuilder
 {
     public static string Build(IConfiguration configuration)
     {
+        var directConnectionString = configuration["POSTGRES_CONNECTION_STRING"];
+        if (!string.IsNullOrWhiteSpace(directConnectionString))
+        {
+            return directConnectionString;
+        }
+
         var host = configuration["POSTGRES_HOST"] ?? "localhost";
         var port = configuration["POSTGRES_PORT"] ?? "5432";
         var database = configuration["POSTGRES_DB"] ?? "vitalminds";

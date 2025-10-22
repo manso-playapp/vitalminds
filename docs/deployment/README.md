@@ -52,21 +52,22 @@ Antes de tocar servicios externos, deja listo el proyecto localmente:
    - **Root Directory**: `.` (la raíz del repo)
    - **Port**: `8080`
    - **Plan**: *Starter* (USD 7/mes) o superior para evitar suspensión.
-4. Variables de entorno requeridas (pegar las mismas del paso anterior):
+4. Variables de entorno requeridas (pegar las mismas del paso anterior). Puedes usar el string completo (`Internal Database URL`) o los campos individuales:
 
-| Variable              | Descripción                                           |
-| --------------------- | ----------------------------------------------------- |
-| `POSTGRES_HOST`       | Host de la DB en Render                               |
-| `POSTGRES_PORT`       | Puerto de la DB                                       |
-| `POSTGRES_DB`         | Nombre de la base                                     |
-| `POSTGRES_USER`       | Usuario de la base                                    |
-| `POSTGRES_PASSWORD`   | Contraseña de la base                                 |
-| `POSTGRES_SSL_MODE`   | Usa `Require` en Render, `Disable` en local           |
-| `POSTGRES_TRUST_SERVER_CERTIFICATE` | Usa `true` en Render                    |
-| `JWT_SECRET`          | Clave secreta generada (mínimo 32 caracteres)         |
-| `JWT_ISSUER`          | Ej. `vitalminds`                                      |
-| `JWT_AUDIENCE`        | Ej. `vitalminds-api`                                  |
-| `WHATSAPP_STUB_ENABLED` | `true` mientras no haya integración real             |
+   | Variable              | Descripción                                           |
+   | --------------------- | ----------------------------------------------------- |
+   | `POSTGRES_CONNECTION_STRING` | Opcional. Pega el valor completo `postgresql://...` de Render |
+   | `POSTGRES_HOST`       | Host de la DB en Render (si no usas `POSTGRES_CONNECTION_STRING`) |
+   | `POSTGRES_PORT`       | Puerto de la DB                                       |
+   | `POSTGRES_DB`         | Nombre de la base                                     |
+   | `POSTGRES_USER`       | Usuario de la base                                    |
+   | `POSTGRES_PASSWORD`   | Contraseña de la base                                 |
+   | `POSTGRES_SSL_MODE`   | Usa `Require` en Render, `Disable` en local           |
+   | `POSTGRES_TRUST_SERVER_CERTIFICATE` | Usa `true` en Render                    |
+   | `JWT_SECRET`          | Clave secreta generada (mínimo 32 caracteres)         |
+   | `JWT_ISSUER`          | Ej. `vitalminds`                                      |
+   | `JWT_AUDIENCE`        | Ej. `vitalminds-api`                                  |
+   | `WHATSAPP_STUB_ENABLED` | `true` mientras no haya integración real             |
 5. Deploy inicial: Render construirá la imagen Docker, aplicará migraciones y ejecutará el seeder. Usuarios creados por defecto:
 
    | Rol            | Usuario                     | Password     |

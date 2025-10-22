@@ -17,3 +17,9 @@
 docker-compose.override.yml
 .env.*
 !.env.example
+.history/
+src/Api/bin/
+src/Api/obj/
+logs/
+node_modules/
+dist/

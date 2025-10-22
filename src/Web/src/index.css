@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  @apply bg-background text-slate-900 transition-colors duration-300;
+}
+
+.dark body {
+  @apply bg-slate-900 text-slate-100;
+}
+
+.logo-brand {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.dark .logo-brand {
+  filter: invert(16%) sepia(93%) saturate(5458%) hue-rotate(211deg) brightness(98%) contrast(107%);
+}

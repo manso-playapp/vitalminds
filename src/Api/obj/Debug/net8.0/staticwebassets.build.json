@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OwFrgheiRLaQeGW9quIgTYNNKErHDpcvBNSe1pEprXo=",
+  "Source": "VitalMinds.Clinic.Api",
+  "BasePath": "_content/VitalMinds.Clinic.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

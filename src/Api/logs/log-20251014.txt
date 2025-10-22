@@ -1,0 +1,31 @@
+2025-10-14 08:16:36.789 -03:00 [Warning] The property '"AuditLog"."Diff"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.834 -03:00 [Warning] The property '"Episode"."FechasHitos"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.834 -03:00 [Warning] The property '"Extraction"."Evidencias"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.836 -03:00 [Warning] The property '"LabResult"."Valores"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.836 -03:00 [Warning] The property '"MedicalOrder"."Items"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.836 -03:00 [Warning] The property '"Notification"."Payload"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.836 -03:00 [Warning] The property '"Parameters"."CatalogoEstudios"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.837 -03:00 [Warning] The property '"Parameters"."Plantillas"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.837 -03:00 [Warning] The property '"Parameters"."SLAs"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.837 -03:00 [Warning] The property '"Parameters"."TestsHabilitados"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.837 -03:00 [Warning] The property '"Sample"."Checklist"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.837 -03:00 [Warning] The property '"Shipment"."Etiquetas"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.837 -03:00 [Warning] The property '"Shipment"."Evidencias"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.837 -03:00 [Warning] The property '"TestResult"."Puntajes"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:36.838 -03:00 [Warning] The property '"TherapyProposal"."Enviados"' is a collection or enumeration type with a value converter but with no value comparer. Set a value comparer to ensure the collection/enumeration elements are compared correctly.
+2025-10-14 08:16:37.239 -03:00 [Warning] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-10-14 08:16:37.275 -03:00 [Error] Error creando usuario seed "lab@vitalminds.local": "Passwords must be at least 8 characters."
+2025-10-14 08:16:37.309 -03:00 [Warning] The query uses the 'First'/'FirstOrDefault' operator without 'OrderBy' and filter operators. This may lead to unpredictable results.
+2025-10-14 08:16:37.344 -03:00 [Warning] No XML encryptor configured. Key {5b2ece8a-4f9e-43f9-afbd-7231b66a1b35} may be persisted to storage in unencrypted form.
+2025-10-14 08:16:37.453 -03:00 [Error] Hosting failed to start
+System.InvalidOperationException: Unable to configure HTTPS endpoint. No server certificate was specified, and the default developer certificate could not be found or is out of date.
+To generate a developer certificate run 'dotnet dev-certs https'. To trust the certificate (Windows and macOS only) run 'dotnet dev-certs https --trust'.
+For more information on configuring HTTPS see https://go.microsoft.com/fwlink/?linkid=848054.
+   at Microsoft.AspNetCore.Hosting.ListenOptionsHttpsExtensions.UseHttps(ListenOptions listenOptions, Action`1 configureOptions)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)

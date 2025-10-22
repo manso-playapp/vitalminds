@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/VitalMinds.Clinic.Api.props" />
+</Project>

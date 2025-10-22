@@ -64,7 +64,7 @@ Antes de tocar servicios externos, deja listo el proyecto localmente:
    | `POSTGRES_PASSWORD`   | Contraseña de la base                                 |
    | `POSTGRES_SSL_MODE`   | Usa `Require` en Render, `Disable` en local           |
 | `POSTGRES_TRUST_SERVER_CERTIFICATE` | Usa `true` en Render                    |
-| `POSTGRES_CONNECTION_ARGS` | Opcional. Ej. `Root Certificate=/usr/local/share/ca-certificates/render-ca.crt` |
+| `POSTGRES_CONNECTION_ARGS` | Opcional. Ej. `Root Certificate=/etc/ssl/certs/ca-certificates.crt` |
    | `JWT_SECRET`          | Clave secreta generada (mínimo 32 caracteres)         |
    | `JWT_ISSUER`          | Ej. `vitalminds`                                      |
    | `JWT_AUDIENCE`        | Ej. `vitalminds-api`                                  |
